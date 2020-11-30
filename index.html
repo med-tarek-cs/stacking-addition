@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stacking Addition</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="boxe-wrapper border">
+      <div class="drag-container">
+
+        <span class="number " draggable="true">0</span>
+        <span class="number " draggable="true">1</span>
+        <span class="number " draggable="true">2</span>
+        <span class="number " draggable="true">3</span>
+        <span class="number " draggable="true">4</span>
+        <span class="number " draggable="true">5</span>
+        <span class="number " draggable="true">6</span>
+        <span class="number " draggable="true">7</span>
+        <span class="number " draggable="true">8</span>
+        <span class="number " draggable="true">9</span>
+
+      </div>
+      <div class="box ">
+        <div class="top">
+          <div class="lines">
+            <div class="line first-line">
+
+              <div class="digit">
+                <span class="small-number empty"></span>
+                <span class="main-number">3</span>
+              </div>
+
+              <div class="digit">
+                <span class="small-number"></span>
+                <span class="main-number">7</span>
+              </div>
+
+            </div>
+            <!-- end line -->
+
+            <div class="line ">
+
+              <div class="digit">
+                <span class="main-number">6</span>
+              </div>
+
+              <div class="digit">
+                <span class="main-number">4</span>
+              </div>
+            </div>
+            <!-- end line -->
+
+          </div>
+          <!-- end lines -->
+
+          <span class="operation">+</span>
+
+        </div>
+        <!-- end top -->
+
+        <div class="divider"></div>
+
+        <div class="bottom">
+          <div class="line">
+
+            <div class="digit ">
+              <span class="main-number empty"></span>
+            </div>
+
+            <div class="digit">
+              <span class="main-number empty"></span>
+            </div>
+
+            <div class="digit">
+              <span class="main-number empty"></span>
+            </div>
+
+          </div>
+          <!-- end line -->
+
+        </div>
+        <!-- end bottom -->
+
+        <a id="check-btn" class="btn" onclick="checkSum()">Check</a>
+
+      </div>
+    </div>
+
+
+    <script src="./js/addition.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

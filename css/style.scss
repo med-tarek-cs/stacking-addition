@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+// variables
+$size: 80px;
+
+.middle {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.border {
+  border: 1px solid salmon;
+}
+
+body {
+  background-color: #f4f4f4;
+  width: 100vw;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.drag-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .number {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-size: .3 * $size;
+    border: 1px solid lightgray;
+    color: darkslategray;
+    cursor: move;
+
+  }
+
+}
+
+// -------- BOXES -------------
+.boxe-wrapper {
+  margin: 0rem auto;
+  width: 400px;
+  position: relative;
+  min-height: 4 * $size;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.top {
+  display: flex;
+  flex-direction: row-reverse;
+
+  .operation {
+    margin: 1rem;
+    align-self: center;
+    font-size: .7 * $size;
+    color: #aaa;
+  }
+}
+
+.line {
+  display: flex;
+
+  .digit {
+    position: relative;
+    width: 5.5rem;
+    min-height: 5.5rem;
+    margin: 3px;
+    border: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .small-number {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #aaa;
+    font-size: .2 * $size;
+    font-weight: bold;
+    text-align: center;
+    // background-color: rgba(100, 30, 30, 0.342);
+  }
+}
+
+.main-number {
+  font-size: $size;
+  text-align: center;
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background-color: red;
+  margin: 5px 0;
+}
+
+.bottom {
+  .digit {
+    color: darkgreen;
+    border: 3px solid #ccc;
+  }
+}
+
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: fit-content;
+
+}
+
+
+.empty {
+  width: 100%;
+  height: 100%;
+  //background-color: lightblue;
+}
+
+
+.hold {
+  border: solid #ccc 40px;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+}
+
+.hovered .number {
+  display: none;
+}
+
+.invisible {
+  display: none;
+}
+
+.btn {
+  font-size: 2rem;
+  color: white;
+  background-color: #2ab7f9;
+  padding: .5rem;
+  border-style: none;
+  text-align: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}
